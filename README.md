@@ -60,4 +60,4 @@ WARRANTY, to the extent permitted by law.
 
 ##AVAILABILITY
 
-[https://github.com/congma/npserverlist.py/](https://github.com/congma/npserverlist.py/)
+[https://github.com/congma/npserverlist/](https://github.com/congma/npserverlist/)
