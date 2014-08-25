@@ -37,9 +37,11 @@ Error messages, if any, are written to the standard error.
 
 ##EXAMPLE
 
-* `npserverlist.py hk`:  Get NTP servers for the zone "HK" (Hong Kong).
+* `npserverlist.py hk`  
+  Get NTP servers for the zone "HK" (Hong Kong).
 * `npserverlist.py hk | sed -e "s/$/ iburst/g" | cat - ntp-boilerplate >
-  /etc/ntp.conf`:  Create `/etc/ntp.conf` (or `/etc/chrony.conf`) from a
+  /etc/ntp.conf`  
+  Create `/etc/ntp.conf` (or `/etc/chrony.conf`) from a
   template file `ntp-boilerplate`, adding `iburst` option to the `server`
   directives.
 
