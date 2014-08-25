@@ -1,8 +1,8 @@
 #!/usr/bin/env python
-"""npserverlist.py -- get NTP pool server list by zone.
+"""npserverlist.py -- get NTP pool server list by zone-name.
 
 USAGE:
-    npserverlist.py zone-name
+    npserverlist.py ZONE-NAME
 
 EXIT CODE:
     0:  The program exits successfully.
@@ -58,7 +58,7 @@ def scrape(doc):
 
 def show_usage():
     """Displays usage."""
-    print >> sys.stderr, "Usage: %s zone-name" % sys.argv[0]
+    print >> sys.stderr, "Usage: %s ZONE-NAME" % sys.argv[0]
 
 
 def main():
