@@ -73,7 +73,7 @@ def main():
         sys.exit(2)
     url = makeurl(zone)
     opener = urllib2.build_opener()
-    opener.addheaders = [("User-agent",
+    opener.addheaders = [("User-Agent",
                           "Mozilla/5.0 (compatible; npserverlist; "
                           "+https://github.com/congma/npserverlist)")]
     try:
