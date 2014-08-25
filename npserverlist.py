@@ -17,7 +17,7 @@ import urllib2
 
 
 CONT_ZONES = frozenset(("africa", "asia", "europe",
-                  "north-america", "oceania", "south-america"))
+                        "north-america", "oceania", "south-america"))
 RE_MATCH = re.compile(r"^server\s+[0-9a-z\-\.]+\.pool\.ntp\.org$")
 
 
