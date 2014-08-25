@@ -72,8 +72,12 @@ def main():
                               sys.argv[1])
         sys.exit(2)
     url = makeurl(zone)
+    opener = urllib2.build_opener()
+    opener.addheaders = [("User-agent",
+                          "Mozilla/5.0 (compatible; npserverlist; "
+                          "+https://github.com/congma/npserverlist)")]
     try:
-        req = urllib2.urlopen(url)
+        req = opener.open(url)
     except urllib2.URLError as urle:
         print >> sys.stderr, ("Error: Failed to retrieve configuration: %s" %
                               urle.reason)
